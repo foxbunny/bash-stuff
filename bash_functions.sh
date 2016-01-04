@@ -3,7 +3,7 @@
 WORK_DIR=${WORK_DIR:=~/code}
 
 findwds() {
-    find "$WORK_DIR" -maxdepth 1 -type d
+    find "$WORK_DIR"/* -maxdepth 0 -type d
 }
 
 activatewd() {
